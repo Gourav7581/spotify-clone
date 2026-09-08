@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="img/logo.svg" alt="PB Spotify logo" width="82" />
+<img src="favicon.ico" alt="PB Spotify logo" width="82" />
 
   # PB Spotify
 
@@ -98,7 +98,7 @@ This structure makes it straightforward to extend the application with more loca
 ## Project structure
 
 ```text
-spotify/
+spotify-clone/
 ├── img/                 # Interface icons and application logo
 ├── songs/
 │   ├── cs/              # Party Songs album
