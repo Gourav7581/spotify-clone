@@ -1,0 +1,88 @@
+.border{
+    border:2px solid red;
+    margin: 3px;
+}
+
+:root{
+  --a : 0;
+}
+.flex{
+    display: flex;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.item-center{
+    align-items: center;
+}
+.bg-black{
+    background-color: black;
+    color: white;
+}
+.invert{
+    filter: invert(1);
+}
+.bg-gray{
+    background-color: #222222;
+}
+.rounded{
+    border-radius: 7px;
+}
+.m1{
+    margin: 5px;
+}
+.p1{
+    padding: 10px;
+}
+
+/* ===== Vars (tweak these) ===== */
+:root {
+  --sb-bg: #0f1115;      /* page bg (track base) */
+  --sb-track: #171a21;   /* track */
+  --sb-thumb: #2c3440;   /* thumb */
+  --sb-thumb-hover: #3b4656;
+  --sb-thumb-active: #4a576b;
+  --sb-corner: #0f1115;  /* corner color (both scrollbars meet) */
+}
+
+/* ===== Firefox ===== */
+* {
+  scrollbar-width: thin; /* auto | thin | none */
+  scrollbar-color: var(--sb-thumb) var(--sb-track);
+}
+
+/* ===== WebKit (Chrome, Edge, Safari, Opera) ===== */
+*::-webkit-scrollbar {
+  width: 10px;            /* vertical */
+  height: 10px;           /* horizontal */
+}
+*::-webkit-scrollbar-track {
+  background: var(--sb-track);
+}
+*::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb);
+  border: 2px solid var(--sb-track); /* creates padding gap */
+  border-radius: 999px;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--sb-thumb-hover);
+}
+*::-webkit-scrollbar-thumb:active {
+  background: var(--sb-thumb-active);
+}
+*::-webkit-scrollbar-corner {
+  background: var(--sb-corner);
+}
+
+/* Optional: only style specific scrollable containers */
+/*
+.my-scroll {
+  overflow: auto;
+}
+.my-scroll, .my-scroll * {
+  scrollbar-color: var(--sb-thumb) var(--sb-track);
+}
+.my-scroll::-webkit-scrollbar { width: 8px; height: 8px; }
+*/
